@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>2.1 Запись чисел в машине Поста и постановка задачи о прибавлении единицы. - Машина Поста</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<meta name="generator" content="TurboSite 1.7.1" />
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>Машина Поста</h1>
+			<p>Электронный учебник</p>
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+			
+		</ul>
+	</div>
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">2.1 Запись чисел в машине Поста и постановка задачи о прибавлении единицы.</h2>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+				
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">На машине Поста можно производить 
+различные действия над числами. Для этого надо прежде всего договориться, как в 
+машине Поста будут записываться числа. Речь будет всегда идти о целых 
+неотрицательных числах 0, 1, 2, 3, 4, ... Рассмотрим конечную последовательность 
+идущих подряд друг за другом отмеченных секций ленты, заключенную между двумя 
+пустыми секциями. Такую последовательность отмеченных секций будем называть 
+массивом, а число секций в ней - длиной массива. Так, на рис. 16 показан массив 
+длины 3, а на рис. 17-три массива: длины 5, длины 1 и длины 2. Условимся теперь 
+число п записывать на ленте посредством массива длины </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"> + 1, а сам этот массив называть 
+машинной записью числа </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">. На рис. 16 и 17 пока замы, 
+следовательно, машинные записи чисел 2, 4, 0 и 1.</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><FONT 
+face=Calibri><SPAN style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><IMG class=image 
+alt=18.png 
+src="user-images/18.png">&nbsp;<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Рис. 16 
+</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri><o:p><IMG 
+class=image alt=19.png 
+src="user-images/19.png"></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Рис. 17 
+<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">Зададимся целью осуществить на машине 
+Поста прибавление единицы. Понимать нашу задачу мы будем следующим образом: надо 
+составить программу, которая, будучи применена к ленте, на которой записано 
+произвольное число n, приводила бы к результативной остановке, причем после 
+остановки на ленте должно быть записано число </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"> + 1 (имеется в виду составление 
+одной программы, годящейся для любого </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">). <o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">В предыдущей фразе задача еще 
+поставлена не вполне точно, так как ни о начальном (т. е. задаваемой в начале), 
+ни о заключительном (т. е. возникающем после результативной остановки) состоянии 
+машины не сказано, ни где именно записано число, ни что еще записано на ленте; 
+не сказано также, где должна стоять каретка. Будем предполагать, что в начале и 
+в конце работы программы на ленте имеются только записи соответствующих чисел 
+(</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"> в начале и n + 1 в конце), 
+расположенные в произвольном месте ленты, а в остальном лента пуста. В целях 
+облегчения нашей задачи не будем налагать никаких дополнительных ограничений на 
+заключительное состояние: нас, таким образом, устроит любая программа, 
+приводящая к ленте с записью числа n + 1, где бы эта запись ни находилась и где 
+бы ни стояла при этом каретка. В то же время мы будем делать все более и болев 
+широкие предположения относительно взаимного расположения каретки и машинной 
+записи числа в начальном состоянии машины. Таким образом, мы будем иметь дело не 
+с одной задачей, а с целой серией задач. Мы настоятельно рекомендуем читателю, 
+прежде чем читать решение какой-либо задачи, попытаться решить ее 
+самому.<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><o:p><FONT 
+face=Calibri>&nbsp;</FONT></o:p></SPAN></P>
+
+				</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+			
+					<div style="clear: both;">&nbsp;</div>
+				</li>
+				<li>
+					<h2></h2>
+					<ul>
+						<li><a style="" href="index.html">Введение</a></li>
+<li><a style="" href="page2.html">1.1 «Внешний вид» машины Поста.</a></li>
+<li><a style="" href="page3.html">1.2 Программа машины Поста.</a></li>
+<li><a style="" href="page4.html">1.3 Работа машины Поста.</a></li>
+<li><a style="" href="page5.html">1.4 Примеры выполнения программ</a></li>
+<li><a style="" href="page6.html">1.5 Методические замечания</a></li>
+<li class="active"><a style="" href="page7.html">2.1 Запись чисел в машине Поста и постановка задачи о прибавлении единицы.</a></li>
+<li><a style="" href="page8.html">2.2 Прибавление единицы в простейшем случае</a></li>
+<li><a style="" href="page9.html">2.3 Прибавление единицы в более сложных случаях</a></li>
+<li><a style="" href="page10.html">2.4 Прибавление единицы в самом общем случае</a></li>
+<li><a style="" href="page11.html">Тест. Проверь полученные знания.</a></li>
+
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p> | <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> | <a href="http://brullworfel.ru/turbosite">TurboSite</a></p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>

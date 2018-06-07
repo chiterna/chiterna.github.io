@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns:o = "urn:schemas-microsoft-com:office:office"><HEAD>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">На машине Поста можно производить 
+различные действия над числами. Для этого надо прежде всего договориться, как в 
+машине Поста будут записываться числа. Речь будет всегда идти о целых 
+неотрицательных числах 0, 1, 2, 3, 4, ... Рассмотрим конечную последовательность 
+идущих подряд друг за другом отмеченных секций ленты, заключенную между двумя 
+пустыми секциями. Такую последовательность отмеченных секций будем называть 
+массивом, а число секций в ней - длиной массива. Так, на рис. 16 показан массив 
+длины 3, а на рис. 17-три массива: длины 5, длины 1 и длины 2. Условимся теперь 
+число п записывать на ленте посредством массива длины </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"> + 1, а сам этот массив называть 
+машинной записью числа </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">. На рис. 16 и 17 пока замы, 
+следовательно, машинные записи чисел 2, 4, 0 и 1.</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><FONT 
+face=Calibri><SPAN style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><IMG class=image 
+alt=18.png 
+src="file:///C:/Users/Андрей/Desktop/Сайт%20машина%20поста/public_html/user-images/18.png">&nbsp;<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Рис. 16 
+</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri><o:p><IMG 
+class=image alt=19.png 
+src="file:///C:/Users/Андрей/Desktop/Сайт%20машина%20поста/public_html/user-images/19.png"></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Рис. 17 
+<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">Зададимся целью осуществить на машине 
+Поста прибавление единицы. Понимать нашу задачу мы будем следующим образом: надо 
+составить программу, которая, будучи применена к ленте, на которой записано 
+произвольное число n, приводила бы к результативной остановке, причем после 
+остановки на ленте должно быть записано число </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"> + 1 (имеется в виду составление 
+одной программы, годящейся для любого </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">). <o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">В предыдущей фразе задача еще 
+поставлена не вполне точно, так как ни о начальном (т. е. задаваемой в начале), 
+ни о заключительном (т. е. возникающем после результативной остановки) состоянии 
+машины не сказано, ни где именно записано число, ни что еще записано на ленте; 
+не сказано также, где должна стоять каретка. Будем предполагать, что в начале и 
+в конце работы программы на ленте имеются только записи соответствующих чисел 
+(</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"> в начале и n + 1 в конце), 
+расположенные в произвольном месте ленты, а в остальном лента пуста. В целях 
+облегчения нашей задачи не будем налагать никаких дополнительных ограничений на 
+заключительное состояние: нас, таким образом, устроит любая программа, 
+приводящая к ленте с записью числа n + 1, где бы эта запись ни находилась и где 
+бы ни стояла при этом каретка. В то же время мы будем делать все более и болев 
+широкие предположения относительно взаимного расположения каретки и машинной 
+записи числа в начальном состоянии машины. Таким образом, мы будем иметь дело не 
+с одной задачей, а с целой серией задач. Мы настоятельно рекомендуем читателю, 
+прежде чем читать решение какой-либо задачи, попытаться решить ее 
+самому.<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><o:p><FONT 
+face=Calibri>&nbsp;</FONT></o:p></SPAN></P></BODY></HTML>

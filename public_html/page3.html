@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1.2 Программа машины Поста. - Машина Поста</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<meta name="generator" content="TurboSite 1.7.1" />
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>Машина Поста</h1>
+			<p>Электронный учебник</p>
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+			
+		</ul>
+	</div>
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">1.2 Программа машины Поста.</h2>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+				<FONT face=Calibri>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=justify><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">Работа машины Поста состоит в том, 
+что каретка передвигается вдоль ленты н печатает или стирает метки. Эта работа 
+происходит по инструкции определенного вида, называемой программой. Для машины 
+Поста возможно составление различных программ. Посмотрим, как устроена 
+программа. Каждая программа машины Поста состоит из команд. Командой машины 
+Поста будем называть выражение, имеющее один из следующих шести видов (буквы i, 
+j, </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">j</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">1, j2 означают всюду натуральные 
+числа 1, 2, 3, 4, 5, ... ): <o:p></o:p></SPAN></P></FONT>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><IMG class=image 
+alt=5.png 
+src="user-images/5.png"></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><IMG class=image 
+alt=5.1.png 
+src="user-images/5.1.png"></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center>Рис. 5</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">Число i, стоящее в начале команды, 
+называется номером команды. Так, у приведенных только что команд номера суть 
+соответственно 137, 25 и 6386. Число j, стоящее в конце команды (а у команд 
+передачи управления - каждое из чисел j1, и </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">j</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">2), будем называть отсылкой (при этом 
+в команде передачи управления j1, - верхней. а j2-нижней отсылкой). У команд 
+остановки нет отсылки. Так, у приведенных только что команд отсылками служат 
+числа 1, 32, 25, причем 32- верхняя отсылка, а 25- нижняя отсылка. Программой 
+машины Поста будем называть конечный непустой (т. е. содержащий хотя бы одну 
+команду) список команд машины Поста, обладающий следующими двумя свойствами: 1) 
+На первом месте в этом списке стоит команда с номером 1, на втором месте (если 
+оно есть) -команда с номером 2 Н т. д.; вообще на k-м месте стоит команда с 
+номером k. 2) Отсылка любой из команд списка совпадает с номером некоторой 
+(другой или той же самой) команды списка (более точно: для каждой отсылка каждой 
+ко-манды списка найдется в списке такая команда, номер которой равен 
+рассматриваемой отсылке). Например, следующий список будет программой машины 
+Поста:</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><IMG class=image 
+alt=6.png 
+src="user-images/6.png"></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center>Рис. 6</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>А эти два списка 
+не будут программами машины Поста, хотя и составлены из команд машины 
+Поста:</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><IMG class=image alt=7.1.png 
+src="user-images/7.1.png"></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><o:p><IMG class=image alt=7.3.png 
+src="user-images/7.3.png"></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><o:p><FONT size=3>Рис. 
+7</FONT></o:p></SPAN></P><SPAN style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><o:p>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Для наглядности 
+программы машины Поста мы будем записывать столбиком. Число команд программы 
+называется длиной 
+программы.</FONT><o:p></o:p></SPAN></P></o:p></SPAN>
+
+				</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+			
+					<div style="clear: both;">&nbsp;</div>
+				</li>
+				<li>
+					<h2></h2>
+					<ul>
+						<li><a style="" href="index.html">Введение</a></li>
+<li><a style="" href="page2.html">1.1 «Внешний вид» машины Поста.</a></li>
+<li class="active"><a style="" href="page3.html">1.2 Программа машины Поста.</a></li>
+<li><a style="" href="page4.html">1.3 Работа машины Поста.</a></li>
+<li><a style="" href="page5.html">1.4 Примеры выполнения программ</a></li>
+<li><a style="" href="page6.html">1.5 Методические замечания</a></li>
+<li><a style="" href="page7.html">2.1 Запись чисел в машине Поста и постановка задачи о прибавлении единицы.</a></li>
+<li><a style="" href="page8.html">2.2 Прибавление единицы в простейшем случае</a></li>
+<li><a style="" href="page9.html">2.3 Прибавление единицы в более сложных случаях</a></li>
+<li><a style="" href="page10.html">2.4 Прибавление единицы в самом общем случае</a></li>
+<li><a style="" href="page11.html">Тест. Проверь полученные знания.</a></li>
+
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p> | <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> | <a href="http://brullworfel.ru/turbosite">TurboSite</a></p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>

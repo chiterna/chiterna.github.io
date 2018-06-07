@@ -1,0 +1,159 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Не будем теперь 
+требовать, чтобы каретка в начале стояла непременно против одной из крайних 
+секций массива, как это было в задачах 1 и 1'. Ограничимся требованием, чтобы в 
+начальном состоянии каретка обозревала одну из секций массива. <?xml:namespace 
+prefix = "o" ns = "urn:schemas-microsoft-com:office:office" 
+/><o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">Задача 2 (длинная формулировка). 
+Требуется написать программу машины Поста, обладающую следующим свойством. 
+Каково бы ни было число п, если начальное состояние машины Поста таково, что на 
+ленте имеется машинная запись числа п (а в остальном лента пуста) н каретка 
+стоит против одной из секций записи, то выполнение программы должно привести к 
+результативной остановке, после чего на ленте (в произвольном ее месте) должно 
+быть записано число </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">+1 (а в остальном лента должна быть 
+пуста), причем каретка может стоять где угодно. <o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">Обозначим через В</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"> совокупность всех таких состояний 
+машины Поста, в каждом из которых отмеченными на ленте являются ровно п + 1 
+секций, а каретка стоит против одной из отмеченных секций. Очевидно, класс 
+В</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"> является частью класса Еn и сам 
+содержит в качестве </SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><FONT 
+face=Calibri><SPAN style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><o:p><IMG 
+class=image alt=26.png 
+src="file:///C:/Users/Андрей/Desktop/Сайт%20машина%20поста/public_html/user-images/26.png"></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Рис. 
+20</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri><o:p><IMG 
+class=image alt=27.png 
+src="file:///C:/Users/Андрей/Desktop/Сайт%20машина%20поста/public_html/user-images/27.png"></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><FONT 
+face=Calibri><SPAN style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%">Рис. 21. Общий вид 
+состояния из класса </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">Bn</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"> </SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%">Здесь n' &gt;=0, </SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%">”&gt;0, </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%">’+</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%">”=</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n<o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">части класс А</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">. На рис. 20 изображено несколько 
+состояний из класса В4, а на рис. 21-общий вид состояния из класса В4. Тогда 
+получаем следующую короткую формулировку задачи 2: Задача 2 (короткая 
+формулировка). На-писать такую программу машины Поста, которая для любого п, 
+будучи применена к произвольному состоянию из класса В,,, дает результативную 
+остановку в каком-то состоянии из класса </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">En</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">+1. Очевидно, что каждое решение 
+задачи 2 будет одно-временно н решением задачи 1, а также задачи 1'. В то же 
+время существуют решения задачи 1, не являющиеся решениями задачи 2. Таковы, 
+например, программы I1 и Т2. Так же, как и для задачи 1, для задачи 2 существует 
+бесконечное множество программ, являющихся ее решением. Мы по-прежнему будем 
+интересоваться наиболее короткими программами. Можно доказать (рекомендуем 
+читателю это сделать), что никакая программа длины 1, 2 или 3 не может быть 
+решением задачи 2. В то же время возможны решения задачи 2 длины 4. Вот одно из 
+таких решений: <o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><o:p><FONT face=Calibri>&nbsp;<IMG 
+class=image alt=28.png 
+src="file:///C:/Users/Андрей/Desktop/Сайт%20машина%20поста/public_html/user-images/28.png"></FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Упражнение 1. 
+Найдите еще два решения задачи 2, имеющих длину 4 и содержащих команду движения 
+влево. Проверьте, что каждое из найденных вами решений содержит команду 
+печатания метки, команду передачи управления и команду остановки. 
+<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">Упражнение 2. Докажите, что, помимо 
+программы </SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">II</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">', существует еще ровно одиннадцать 
+(II2, II3, ... ..., II12) решений задачи 2, имеющих длину 4 и содержащих команду 
+движения влево. Выпишите эти решения. <o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Рассмотрим теперь 
+такие начальные состояния, в которых каретка держит в поле зрения не какую-то из 
+секций исходного массива, а какую-то пустую секцию. Будем предполагать при этом, 
+что является заранее известным, стоит ли каретка слева или справа от исходного 
+массива. Слова «является заранее известным» обозначают, что требуется найти не 
+единую программу, работающую во всех случаях, а две программы, одна из которых 
+работает в случае, если каретка вначале стоит слева от массива, а другая 
+работает в случае, когда каретка вначале стоит справа от массива. Таким образом, 
+мы имеем здесь не одну, а две задачи. Чтобы получить сразу короткие формулировки 
+этих задан, введем следующие обозначения. Обозначим через С4 совокупность всех 
+таких состояний из класса Е4, в которых каретка стоит слева от массива, а через 
+С - совокупность всех<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">таких состояний из класса Е4, в 
+которых каретка стоит справа от массива. На рис. 21 показан общий вид состояния 
+из класса С4, а на рис. 22 - общий вид состояния из класса С</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">. <o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Задача 3 (короткая 
+формулировка). Написать такую программу машины Поста, которая для любого п, 
+будучи применена к произвольному состоянию </FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri><o:p><IMG 
+class=image alt=29.png 
+src="file:///C:/Users/Андрей/Desktop/Сайт%20машина%20поста/public_html/user-images/29.png"></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Рис. 22 
+</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri><o:p><IMG 
+class=image alt=30.png 
+src="file:///C:/Users/Андрей/Desktop/Сайт%20машина%20поста/public_html/user-images/30.png"></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt" align=center><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Рис. 
+23<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><FONT face=Calibri><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">из класса С, дает результативную 
+остановку в каком-то состоянии из класса Е</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%; mso-ansi-language: EN-US">n</SPAN><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%">+1. <o:p></o:p></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Задача 3' 
+(короткая формулировка). Написать такую программу машины Поста, которая для 
+любого n, будучи применена к произвольному состоянию из класса С, дает 
+результативную остановку в каком-то состоянии из класса Еn+1. 
+<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Очевидно, что 
+каждую программу, являющуюся решением задачи 3, можно превратить в решение 
+задачи 3', если всюду знак заменить на знак С, а знак заменить на знак. Такой же 
+операцией любое решение задачи 3' превращается в решение задачи 3. Поэтому 
+достаточно решить только одну из этих задач. Вот одно из решений задачи 
+3:<o:p></o:p></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><o:p><FONT face=Calibri>&nbsp;<IMG 
+class=image alt=31.png 
+src="file:///C:/Users/Андрей/Desktop/Сайт%20машина%20поста/public_html/user-images/31.png"></FONT></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 8pt"><SPAN 
+style="FONT-SIZE: 14pt; LINE-HEIGHT: 107%"><FONT face=Calibri>Попробуйте 
+доказать, что задача 3 не допускает ба4 лее коротких решений. Сколько существует 
+решений этой задачи длины 5?</FONT><o:p></o:p></SPAN></P></BODY></HTML>
